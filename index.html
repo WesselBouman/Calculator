@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="header">
+<h1>Assetto Corsa Competizione Fuel Calculator</h1>
+</div>
+
+<div class="row">
+
+  <div class="column">
+            <h2>Calculate your required amount of fuel fast and easily!</h2>
+        <p><br>Assetto Corsa Competizione is a racing simulator in which players can drive race cars against AI offline or against other players online. It includes offline career, custom championship, custom races and special events gameplay modes as well as online multiplayer, with session types consisting of Free Practice, Hot Lap, Superpole, Hot Stint, Quick Race (one race up to one hour), Sprint Race Weekend (with up to two practice, two qualifying sessions and two races up to one hour in length) and Endurance Race Weekend (with up to two practice, four qualifying sessions and a top-ten superpole, as well as one or two races each one to twenty-four hours in length). Races can be saved and resumed mid-session in offline modes. Offline grids are automatically selected depending on the series and season selected by the player. Alternatively races can be made into single-make sessions, allowing creation of series such as Porsche Carrera Cup, Lamborghini Super Trofeo or Audi R8 LMS Cup. Car selection in multiplayer is free unless determined through server settings.
+        </p>
+          </div>
+
+  <div class="column">
+    <div class="card">
+    <p>Race lenght (in minutes) </p>
+        <input id="inputMinutes" type="Number" placeholder="Number">
+            
+    <p>Time per lap (in seconds) </p>
+    <input id="inputTime" type="Number" placeholder="Number">
+
+    <p>Fuel per lap</p>
+    <input id="inputFuelConsumption" type="Number" placeholder="Number"> <div></div>
+
+    <p>Extra fuel</p>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="3" class="slider" id="myRange"> <p></p>
+      Literes: <span id="extraLiteres"></span>
+    </div>
+      
+    <p></p>
+    <button class="button" onclick="returnNumber()">Calculate</button>
+</div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
